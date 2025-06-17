@@ -210,7 +210,7 @@
 <body>
     <div class="game-container">
         <h1>🎮 Rock Paper Scissors</h1>
-        <p class="subtitle">Pilih senjata Anda!</p>
+        <p class="subtitle">Pilih senjatamu!</p>
         
         <div class="choices">
             <button class="choice-btn" onclick="playGame('rock')" title="Batu">🪨</button>
@@ -230,7 +230,7 @@
 
         <div class="score">
             <div class="score-item">
-                <div>Anda</div>
+                <div>Kamu</div>
                 <div id="playerScore">0</div>
             </div>
             <div class="score-item">
@@ -303,11 +303,11 @@
             const resultElement = document.getElementById('result');
             
             if (result === 'win') {
-                resultElement.textContent = `🎉 Anda Menang! ${choiceNames[playerChoice]} mengalahkan ${choiceNames[computerChoice]}`;
+                resultElement.textContent = `🎉 Kamu Menang! ${choiceNames[playerChoice]} mengalahkan ${choiceNames[computerChoice]}`;
                 resultElement.className = 'result win';
                 playerScore++;
             } else if (result === 'lose') {
-                resultElement.textContent = `😔 Anda Kalah! ${choiceNames[computerChoice]} mengalahkan ${choiceNames[playerChoice]}`;
+                resultElement.textContent = `😔 Kamu Kalah! ${choiceNames[computerChoice]} mengalahkan ${choiceNames[playerChoice]}`;
                 resultElement.className = 'result lose';
                 computerScore++;
             } else {
